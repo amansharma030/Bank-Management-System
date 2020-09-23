@@ -1,0 +1,27 @@
+<------------Customer Table------------>
+
+create table customer(
+SerialNumber int primary key,
+Date varchar(50),
+Account varchar(50),
+Particular varchar(50),
+Amount Double,
+Balance Double);
+
+
+<------------Pin Table------------>
+
+create table pin(
+username int primary key,
+pass int);
+
+insert into pin(username, pass) values (999999,1234);
+
+
+<------------Complaint Table------------>
+
+create table complaint(
+date varchar(50),
+customerNumber int not null,
+complaints varchar(10000));
+
